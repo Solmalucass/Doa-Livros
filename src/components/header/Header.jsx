@@ -4,26 +4,26 @@ import lupa from '../../assets/lupa.png';
 import Inicio from '../../pages/inicio/Inicio.jsx'
 import LivrosDoados from '../../pages/livrosDoados/LivrosDoados.jsx';
 import QueroDoar from '../../pages/queroDoar/QueroDoar.jsx';
-
+import s from './header.module.scss'
 
 
 export default function Header() {
     return (
         <BrowserRouter>
-        <header>
-            <section>
+        <header className={s.header}>
+            <section className={s.logoheader}>
                 <img src={logoLivro} alt="logo" />
                 <h1>Livros Vai na Web</h1>
             </section>
-            <nav>
+            <nav className={s.navheader}>
                 <ul>
-                    <li><Link to ="/">Início</Link></li>
-                    <li><Link to ="/livros-doados">Livros Doados</Link></li>
-                    <li><Link to ="/quero-doar">Quero Doar</Link></li>
+                    <li><Link className={s.link} to ="/">Início</Link></li>
+                    <li><Link className={s.link} to ="/livros-doados">Livros Doados</Link></li>
+                    <li><Link className={s.link} to ="/quero-doar">Quero Doar</Link></li>
                 </ul>
             </nav>
-            <section>
-                <input type="search" name="" id="" placeholder="Oque voce procura?" />
+            <section className={s.buscar}>
+                <input type="search" name="" id="" placeholder="O que você procura?" />
                 <button><img src={lupa} alt="Imagem lupa branca" /></button>
             </section>
         </header>
