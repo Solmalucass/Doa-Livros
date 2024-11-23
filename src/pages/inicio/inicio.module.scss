@@ -1,0 +1,38 @@
+.Sectionlivro{
+    height: 70vh;
+    background-image: url('../../assets/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+        h2{
+            color: white;
+            font-size: 25px;
+            width: 24%;
+            font-family: "roboto", sans-serif;
+        }
+}
+
+.Sectionporque{
+    background-color: white;
+    height: 74vh;
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+    padding-bottom: 26%;
+        h2{
+            color: #005695;
+            font-size: 30px;
+        }
+
+}
+
+.Cartoes{
+    border: solid 1px #005695;
+    width: 20%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #015794;
+}
