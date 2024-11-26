@@ -15,24 +15,44 @@
 }
 
 .Sectionporque{
-    background-color: white;
-    height: 74vh;
     display: flex;
-    align-items: center;
-    padding-left: 6%;
-    padding-bottom: 26%;
-        h2{
-            color: #005695;
-            font-size: 30px;
-        }
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 74vh;
 
+        h2  {
+            font-size: 33px;
+            color: #005695;
+            width: 32%;
+            text-align: center;
+
+        }
+    
 }
 
-.Cartoes{
-    border: solid 1px #005695;
-    width: 20%;
-    height: 45vh;
+.Cards{
     display: flex;
-    justify-content: space-between;
-    background-color: #015794;
+    justify-content: space-evenly;
+    height: 50vh;
+
+    section {
+        background-color: #0157944D;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 6px;
+
+        img{
+            width: 40%;
+        }
+        P {
+            font-size: 18px;
+            text-align: center;
+            width: 75%;
+        }
+
+    }    
+    
 }
