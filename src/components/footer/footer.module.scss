@@ -1,4 +1,27 @@
-.footer{
+
+.redes{
     background-color: #055695;
     height: 22vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    padding: 0 3%;
+    
+    nav{
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+.copyright{
+    height: 9vh;
+    background-color: #232020;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
