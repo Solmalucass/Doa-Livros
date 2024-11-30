@@ -1,0 +1,38 @@
+.livrosDoadosSection{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+h2{
+    font-size: 30px;
+}
+
+.container{
+    width: 95%;
+    height: 60vh    ;
+
+    section{
+        border: solid #005695;
+        width: 20%;
+        height: 40vh;
+        border-radius: 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        cursor: pointer;
+
+        img{
+            width: 90%;
+            height: 52%;
+        }
+
+
+    }
+
+
+}

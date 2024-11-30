@@ -49,7 +49,11 @@
         background-color: transparent;
         border: none;
         width: 80%;
-
+        outline: none; 
+        color: white;
+        font-size: 16px;
+        
+        
         &::placeholder{
             color: white;
             font-size: 16px;
@@ -62,4 +66,24 @@
         border: none;
         cursor: pointer;
     }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .logoheader{
+        width: 68%;
+    }
+
+    .navheader{
+
+        width: 87%;
+    }
+
+    .buscar{
+        display: none;
+        }
 }

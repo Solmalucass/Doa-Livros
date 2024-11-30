@@ -35,10 +35,14 @@ form {
         height: 5vh;
         border: solid #005695;
         border-radius: 10px;
-        padding-left: 10px; 
+        padding-left: 10px;
+        outline: none;
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
 
         &::placeholder {
             color: #000;
+            font-size: 17px;
         }
     }
 
