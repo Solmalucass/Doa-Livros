@@ -3,7 +3,7 @@ import s from './queroDoar.module.scss'
 export default function QueroDoar() {
   return (
     <section className={s.sectionQueroDoar}>
-      <p>Por favor, preencha o formulário com suas informações e as informações do Livro</p>
+      <p>Por favor, preencha o formulário com suas informações e as informações do Livro.</p>
       <form action="">
         <div>
           <img src={iconLivro} alt="icone livro aberto" />

@@ -36,3 +36,19 @@ h2{
 
 
 }
+
+@media (max-width: 780px) {
+    .livrosDoadosSection{
+        height: 100vh;
+    }
+
+    .container{
+        width: 95%;
+        height: 80vh;
+
+        section{
+            width: 45%;
+            height: 25vh;
+        }
+    }
+}

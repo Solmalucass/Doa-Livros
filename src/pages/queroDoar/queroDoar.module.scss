@@ -57,3 +57,17 @@ form {
 }
 
 }
+
+@media (max-width: 780px){
+    .sectionQueroDoar{
+        height: 100vh;
+        text-align: center;
+
+        p{
+            font-size: 19.5px;
+        }
+    }
+    form{
+        width: 85%;
+    }
+}

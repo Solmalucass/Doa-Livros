@@ -8,12 +8,13 @@ import balanca from '../../assets/balanca.png';
 export default function Inicio() {
   return (
     <main>
-      <section ction className={s.Sectionlivro}>
+      <section className={s.Sectionlivro}>
         <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
       </section>
 
       <section className={s.Sectionporque}>
         <h2>Por que devo doar?</h2>
+        
         <div className={s.Cards}>
           <section>
             <img src={comunidade} alt="icone representando uma comunidade de pessoas" />

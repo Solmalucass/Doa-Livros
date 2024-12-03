@@ -56,3 +56,45 @@
     }    
     
 }
+
+@media (max-width: 780px){
+    .Sectionlivro {
+        background-position: center;
+        height: 50vh;
+
+        h2 {
+            width: 90%;
+            font-size: 28px;
+            text-align: center;
+        }
+    }
+
+    .Sectionporque {
+        height: 120vh;
+
+        h2 {
+            font-size: 35px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .Cards {
+        height: 110vh;
+        flex-direction: column;
+        align-items: center;
+
+        section {
+            width: 70%;
+            height: 25vh;
+
+            p {
+                font-size: 18px;
+            }
+
+            img {
+                width: 28%;
+            }
+        }
+    }
+}

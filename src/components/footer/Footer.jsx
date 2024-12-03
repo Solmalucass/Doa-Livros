@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className={s.footer}>
       <section className={s.redes}>
-        <p>0800 123 4567</p>
+        <p>0800 123 4567</p>  
         <nav>
           <a href="">< img src={facebookicon} alt='icone do Facebook' /></a>
           <a href="">< img src={twittericon} alt='icone do Twitter' /></a>

@@ -6,7 +6,6 @@
     justify-content: space-between;
     align-items: center;
     color: #FFF;
-    padding: 0 3%;
     
     nav{
         width: 20%;
@@ -24,4 +23,24 @@
     justify-content: center;
     align-items: center;
 
+}
+
+
+@media (max-width: 780px){
+    .redes{
+        height: 15vh;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            font-size: 20px;
+            padding-bottom: 3%;
+        }
+        nav{
+            width: 60%;
+        }
+    }
+    .copyright{
+        height: 10vh;
+        font-size: 13px;
+    }
 }
