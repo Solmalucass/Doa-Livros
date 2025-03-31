@@ -27,20 +27,14 @@ export default function QueroDoar(){
     }
 
     const EnvioDados = async() => {
+
       const dadosEnviar = {
         titulo,
         categoria,
         autor,
         image_url
-      }
-
-      try {
-        await axios.post("https://flask-api-htrv.onrender.com/quero-doar", dadosEnviar);
-        alert("Dados enviados com sucesso!");
-      } catch (error) {
-        console.error("Erro ao enviar os dados:", error);
-        alert("Ocorreu um erro ao enviar os dados. Por favor, tente novamente.");
-      }
+    }
+      await axios.post("https://flask-api-htrv.onrender.com/quero-doar", dadosEnviar)
     }
 
   return (
