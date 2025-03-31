@@ -27,22 +27,26 @@ export default function QueroDoar(){
     }
 
     const EnvioDados = async() => {
-
       const dadosEnviar = {
         titulo,
         categoria,
         autor,
         image_url
-    }
-  
+      }
 
-      await axios.post("https://flask-api-htrv.onrender.com", dadosEnviar)
+      try {
+        await axios.post("https://flask-api-htrv.onrender.com/quero-doar", dadosEnviar);
+        alert("Dados enviados com sucesso!");
+      } catch (error) {
+        console.error("Erro ao enviar os dados:", error);
+        alert("Ocorreu um erro ao enviar os dados. Por favor, tente novamente.");
+      }
     }
 
   return (
     <section className={s.sectionQueroDoar}>
       <p>Por favor, preencha o formulário com suas informações e as informações do Livro.</p>
-      <form action="">
+      <form onSubmit={(e) => e.preventDefault()}>
         <div>
           <img src={iconLivro} alt="icone livro aberto" />
           <h2>Informações do Livro</h2>
@@ -51,7 +55,7 @@ export default function QueroDoar(){
         <input type="text" name="" id="" placeholder="Categoria" onChange={capturaCategoria}/>
         <input type="text" name="" id="" placeholder="Autor" onChange={capturaAutor}/>
         <input type="text" name="" id="" placeholder="Link da Imagem"onChange={capturaImagem} />
-        <input submite type="submit" value="Doar" className={s.buttonDoar} onClick={EnvioDados}/>
+        <input type="submit" value="Doar" className={s.buttonDoar} onClick={EnvioDados}/>
 
       </form>
     </section>
