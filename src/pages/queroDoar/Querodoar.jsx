@@ -8,7 +8,7 @@ export default function QueroDoar(){
   const [titulo, setTitulo] = useState("")
   const [categoria, setCategoria] = useState("")
   const [autor, setAutor] = useState("")
-  const [image_url, setImagem_url] = useState("")
+  const [image_url, setImage_url] = useState("")
 
     const capturaTitulo = (e) => {
       setTitulo(e.target.value)
@@ -22,11 +22,11 @@ export default function QueroDoar(){
       setAutor(e.target.value)
     }
 
-    const capturaImagem = (e) => {
-      setImagem_url(e.target.value)
+    const capturaImage_url = (e) => {
+      setImage_url(e.target.value)
     }
 
-    const EnvioDados = async() => {
+    const envioDados = async() => {
 
       const dadosEnviar = {
         titulo,
@@ -34,7 +34,7 @@ export default function QueroDoar(){
         autor,
         image_url
     }
-      await axios.post("https://flask-api-htrv.onrender.com/quero-doar", dadosEnviar)
+      await axios.post("https://apivainolivro.onrender.com/doar", dadosEnviar)
     }
 
   return (
@@ -48,8 +48,8 @@ export default function QueroDoar(){
         <input type="text" name="" id="" placeholder="Título" onChange={capturaTitulo}/>
         <input type="text" name="" id="" placeholder="Categoria" onChange={capturaCategoria}/>
         <input type="text" name="" id="" placeholder="Autor" onChange={capturaAutor}/>
-        <input type="text" name="" id="" placeholder="Link da Imagem"onChange={capturaImagem} />
-        <input type="submit" value="Doar" className={s.buttonDoar} onClick={EnvioDados}/>
+        <input type="text" name="" id="" placeholder="Link da Imagem"onChange={capturaImage_url} />
+        <input type="submit" value="Doar" className={s.buttonDoar} onClick={envioDados}/>
 
       </form>
     </section>

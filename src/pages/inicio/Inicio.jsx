@@ -5,6 +5,7 @@ import transformacao from '../../assets/transformacao.png';
 import balanca from '../../assets/balanca.png';
 
 
+
 export default function Inicio() {
   return (
     <main>
