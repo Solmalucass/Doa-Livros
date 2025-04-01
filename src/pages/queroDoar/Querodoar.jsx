@@ -2,17 +2,7 @@ import axios from 'axios';
 import iconLivro from '../../assets/Vector.png'
 import s from './queroDoar.module.scss'
 import { useState } from 'react'; 
-const { createProxyMiddleware } = require('http-proxy-middleware');
 
-module.exports = function(app) {
-  app.use(
-    '/doar',
-    createProxyMiddleware({
-      target: 'https://apivainolivro.onrender.com',
-      changeOrigin: true,
-    })
-  );
-};
 export default function QueroDoar(){
   
   const [titulo, setTitulo] = useState("")
