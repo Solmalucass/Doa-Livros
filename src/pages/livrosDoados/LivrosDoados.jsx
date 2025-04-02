@@ -8,13 +8,8 @@ export default function LivrosDoados() {
   const [livros, setLivros] = useState([]);
 
   const puxarLivros = async () => {
-    try {
-      const resposta = await axios.get("https://apivainolivro.onrender.com/livros-doados");
-      setLivros(resposta.data);
-    } catch (error) {
-      console.error("Erro ao puxar livros:", error.message);
-      setLivros([]);
-    }
+    const resposta = await axios.get("https://apivainolivro.onrender.com/livros-doados");
+    setLivros(resposta.data);
   }
 
   useEffect(() => {
