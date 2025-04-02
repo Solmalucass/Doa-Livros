@@ -1,15 +1,20 @@
 import oProtagonista from "../../assets/protagonista.png";
 import s from "./livrosDoados.module.scss";
 import { useEffect, useState } from "react";
-import axios from "axios"
+import axios  from "axios"
 
 export default function LivrosDoados() {
 
   const [livros, setLivros] = useState([]);
 
   const puxarLivros = async () => {
-    const resposta = await axios.get("https://apivainolivro.onrender.com/livros-doados");
-    setLivros(resposta.data)
+    try {
+      const resposta = await axios.get("https://apivainolivro.onrender.com/livros-doados");
+      setLivros(resposta.data);
+    } catch (error) {
+      console.error("Erro ao puxar livros:", error.message);
+      setLivros([]);
+    }
   }
 
   useEffect(() => {
