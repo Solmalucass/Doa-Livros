@@ -10,6 +10,7 @@ export default function LivrosDoados() {
   const puxarLivros = async () => {
     const resposta = await axios.get("https://apivainolivro.onrender.com/livros-doados");
     setLivros(resposta.data);
+    console.log(livros);
   }
 
   useEffect(() => {
